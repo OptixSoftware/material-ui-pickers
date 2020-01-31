@@ -24,6 +24,8 @@ export interface CalendarWithHeaderProps
   leftArrowIcon?: React.ReactNode;
   /** Right arrow icon */
   rightArrowIcon?: React.ReactNode;
+  showLeftArrowButton: boolean;
+  showRightArrowButton: boolean;
   /**
    * Props to pass to left arrow button
    * @type {Partial<IconButtonProps>}
@@ -91,6 +93,8 @@ export const CalendarHeader: React.SFC<CalendarWithHeaderProps> = ({
   rightArrowIcon,
   leftArrowButtonProps,
   rightArrowButtonProps,
+  showLeftArrowButton = true,
+  showRightArrowButton = true,
   changeView,
   onMonthChange,
   minDate,
@@ -187,30 +191,33 @@ export const CalendarHeader: React.SFC<CalendarWithHeaderProps> = ({
 
         <Fade in={view === 'date'}>
           <div>
-            <IconButton
-              data-mui-test="previous-month"
-              size="small"
-              {...leftArrowButtonProps}
-              disabled={isPreviousMonthDisabled}
-              onClick={selectPreviousMonth}
-              className={clsx(
-                classes.iconButton,
-                classes.previousMonthButton,
-                leftArrowButtonProps?.className
-              )}
-            >
-              {isRtl ? rightArrowIcon : leftArrowIcon}
-            </IconButton>
-
-            <IconButton
-              size="small"
-              {...rightArrowButtonProps}
-              disabled={isNextMonthDisabled}
-              onClick={selectNextMonth}
-              className={clsx(classes.iconButton, rightArrowButtonProps?.className)}
-            >
-              {isRtl ? leftArrowIcon : rightArrowIcon}
-            </IconButton>
+            {showLeftArrowButton && (
+              <IconButton
+                data-mui-test="previous-month"
+                size="small"
+                {...leftArrowButtonProps}
+                disabled={isPreviousMonthDisabled}
+                onClick={selectPreviousMonth}
+                className={clsx(
+                  classes.iconButton,
+                  classes.previousMonthButton,
+                  leftArrowButtonProps?.className
+                )}
+              >
+                {isRtl ? rightArrowIcon : leftArrowIcon}
+              </IconButton>
+            )}
+            {showRightArrowButton && (
+              <IconButton
+                size="small"
+                {...rightArrowButtonProps}
+                disabled={isNextMonthDisabled}
+                onClick={selectNextMonth}
+                className={clsx(classes.iconButton, rightArrowButtonProps?.className)}
+              >
+                {isRtl ? leftArrowIcon : rightArrowIcon}
+              </IconButton>
+            )}
           </div>
         </Fade>
       </div>
