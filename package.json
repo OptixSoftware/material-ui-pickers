@@ -23,7 +23,7 @@
     "docgen": "node docs/scripts/docgen.js",
     "lint": "eslint './**/*.ts*' './**/*.js' './**/*.jsx'",
     "build": "yarn workspaces run build & yarn workspaces run build:typescript",
-    "release": "yarn workspace @material-ui/pickers release && git push && git push --tags"
+    "release": "yarn workspace @material-ui/pickers release --tags"
   },
   "repository": {
     "type": "git",
