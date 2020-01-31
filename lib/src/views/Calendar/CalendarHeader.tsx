@@ -24,8 +24,16 @@ export interface CalendarWithHeaderProps
   leftArrowIcon?: React.ReactNode;
   /** Right arrow icon */
   rightArrowIcon?: React.ReactNode;
-  showLeftArrowButton: boolean;
-  showRightArrowButton: boolean;
+  /**
+   * Show left arrow button?
+   * @default true
+   */
+  showLeftArrowButton?: boolean;
+  /**
+   * Show right arrow button?
+   * @default true
+   */
+  showRightArrowButton?: boolean;
   /**
    * Props to pass to left arrow button
    * @type {Partial<IconButtonProps>}
@@ -93,8 +101,8 @@ export const CalendarHeader: React.SFC<CalendarWithHeaderProps> = ({
   rightArrowIcon,
   leftArrowButtonProps,
   rightArrowButtonProps,
-  showLeftArrowButton = true,
-  showRightArrowButton = true,
+  showLeftArrowButton,
+  showRightArrowButton,
   changeView,
   onMonthChange,
   minDate,

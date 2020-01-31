@@ -404,6 +404,36 @@
         "name": "Partial<IconButtonProps>"
       }
     },
+    "showLeftArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show left arrow button?",
+      "name": "showLeftArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
+    "showRightArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show right arrow button?",
+      "name": "showRightArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
     "shouldDisableDate": {
       "defaultValue": null,
       "description": "Disable specific date",
@@ -2110,6 +2140,36 @@
         "name": "Partial<IconButtonProps>"
       }
     },
+    "showLeftArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show left arrow button?",
+      "name": "showLeftArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
+    "showRightArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show right arrow button?",
+      "name": "showRightArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
     "shouldDisableDate": {
       "defaultValue": null,
       "description": "Disable specific date",
@@ -2311,6 +2371,36 @@
       "required": false,
       "type": {
         "name": "Partial<IconButtonProps>"
+      }
+    },
+    "showLeftArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show left arrow button?",
+      "name": "showLeftArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
+    "showRightArrowButton": {
+      "defaultValue": {
+        "value": "true"
+      },
+      "description": "Show right arrow button?",
+      "name": "showRightArrowButton",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
       }
     },
     "shouldDisableDate": {
